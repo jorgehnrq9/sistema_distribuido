@@ -16,7 +16,7 @@ def listarproduto():
         print (elemento)
 
 def excluirproduto():
-    nomeproduto = input("Nome do CD que deseja excluir:")
+    nomeproduto = input("Digite o nome do produto que deseja excluir:")
     indice = -1
     encontrou = False
     for elemento in listaproduto:
