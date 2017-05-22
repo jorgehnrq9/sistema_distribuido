@@ -18,7 +18,7 @@ class Send:
   return self.new
  
 #função esperar - Thread
-def esperar(tcp,send,host='192.168.0.2',port=5000):
+def esperar(tcp,send,host='127.0.0.1',port=5000):
  origem=(host,port)
  #cria um vinculo
  tcp.bind(origem)
