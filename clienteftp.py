@@ -1,4 +1,5 @@
 import socket
+from time import sleep
 
 def Main():
     host = '127.0.0.1'
@@ -26,9 +27,11 @@ def Main():
                     f.write(data)
                     print ("{0:.2f}".format((totalRecv/float(filesize))*100)+ "% Done")
                 print ("Download Completo!")
+                sleep(10)
                 f.close()
         else:
             print ("O arquivo nao existe!")
+            sleep(10)
 
     s.close()
     
