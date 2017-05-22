@@ -18,7 +18,7 @@ class Send:
   return self.new
  
 #função esperar - Thread
-def esperar(tcp,send,host='192.168.0.2',port=5000):
+def esperar(tcp,send,host='127.0.0.1',port=5000):
  destino=(host,port)
  #conecta a um servidor
  tcp.connect(destino)
@@ -37,8 +37,8 @@ if __name__ == '__main__':
  print('Digite IP do servidor(localhost): ')
  host=input()
   
- if host=='192.168.0.2':
-  host = '192.168.0.2'
+ if host=='127.0.0.1':
+  host = '127.0.0.1'
   
  #cria um socket
  tcp=socket(AF_INET,SOCK_STREAM)
